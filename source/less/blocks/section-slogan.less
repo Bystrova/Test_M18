@@ -1,0 +1,30 @@
+.section-slogan {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	color: @basic-green;
+	letter-spacing: 0.62px;
+	font-weight: 500;
+
+	&--black {
+		color: @basic-black;
+	}
+
+	&--center {
+		text-align: center;
+
+		br {
+			display: none;
+		}
+
+		@media (min-width: @tablet-width) {
+			display: block;
+			margin: 0 auto;
+			width: 300px;
+
+			br {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.basic-button {
+	display: block;
+	overflow: hidden;
+	border: none;
+	padding: 0;
+	margin: 0;
+	min-width: 250px;
+	cursor: pointer;
+	background-color: transparent;
+	font-family: @main-font;
+
+	&--center {
+		margin: 0 auto;
+	}
+}
+
+.basic-button__text {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	padding: 17px 28px 15px 31px;
+	background-color: @basic-orange;
+	border-radius: 30px;
+	color: @basic-white;
+	box-shadow: 0px 7px 15px @basic-opacity-orange;
+	display: block;
+
+	&:hover {
+		background-color: @basic-hover-orange;
+		box-shadow: 0px 15px 20px @basic-opacity-orange;
+	}
+}

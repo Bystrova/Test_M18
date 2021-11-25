@@ -1,0 +1,31 @@
+.section-heading {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	letter-spacing: -0.1px;
+	margin: 0 0 6px 0;
+	padding: 0;
+
+	@media (min-width: @tablet-width) {
+		font-size: 40px;
+	line-height: 50px;
+	}
+
+	&--absolute {
+		position: absolute;
+		top: -40px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		background-color: @basic-white;
+		padding: 0 15px 0 21px;
+		display: block;
+		min-width: 320px;
+		z-index: 1;
+		text-align: center;
+	}
+
+	@media (min-width: @tablet-width) {
+		white-space: nowrap;
+		top: -25px;
+	}
+}

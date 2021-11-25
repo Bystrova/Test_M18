@@ -1,0 +1,106 @@
+.video-wrap {
+	width: 100%;
+	height: 520px;
+	background: url("/img/play-background.jpg") center bottom no-repeat,
+		url("/img/grey-background.png");
+	position: relative;
+	background-size: contain;
+
+	@media(min-width: @tablet-width) {
+		min-height: 920px;
+		background-size: auto auto;
+		background: url("/img/play-background-tablet.jpg") center bottom no-repeat,
+			url("/img/grey-background.png");
+	}
+
+	@media (min-width: @desktop-width) {
+		height: 100%;
+		right: 20px;
+		background: url("/img/play-background.jpg") center bottom no-repeat,
+			url("/img/grey-background.png");
+	}
+}
+
+.video-wrap__video {
+	width: inherit;
+	height: inherit;
+	min-height: inherit;
+	max-height: inherit;
+}
+
+.video-wrap__play-button {
+	justify-self: center;
+	font-size: 21px;
+	line-height: 30px;
+	color: @basic-orange;
+	left: 50%;
+	bottom: 240;
+	transform: translate(-50%, -240px);
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	align-items: center;
+	position: relative;
+
+	@media (min-width: @tablet-width) {
+		bottom: calc(50% - 30px);
+		transform: translate(-50%, calc(50% + 30px));
+	}
+
+	@media (min-width: @desktop-width) {
+		bottom: calc(50% - 30px);
+		transform: translate(-50%, calc(50% + 30px));
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 154px;
+		height: 154px;
+		background: url("/img/circle-mobile.svg") no-repeat;
+		top: -180px;
+		left: 5px;
+
+		@media (min-width: @tablet-width) {
+			width: 254px;
+			height: 254px;
+			background: url("/img/circle.svg") no-repeat;
+			top: -280px;
+			left: -45px;
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 63px;
+		height: 85px;
+		background: url("/img/triangle-mobile.svg") no-repeat;
+		top: -142px;
+		left: 57px;
+
+		@media (min-width: @tablet-width) {
+			width: 114px;
+			height: 131px;
+			background: url("/img/triangle.svg") no-repeat;
+			top: -215px;
+			left: 40px;
+		}
+	}
+
+	&:hover::after {
+		background: url("/img/triangle-hover-mobile.svg") no-repeat;
+		width: 87px;
+		height: 120px;
+		top: -153px;
+		left: 50px;
+
+		@media (min-width: @tablet-width) {
+			width: 135px;
+			height: 155px;
+			background: url("/img/triangle-hover.svg") no-repeat;
+			top: -227px;
+			left: 30px;
+		}
+	}
+}

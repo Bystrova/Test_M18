@@ -1,0 +1,34 @@
+.footer {
+	background-color: @extra-light-grey;
+	padding: 72px 0 0 0;
+	text-align: center;
+}
+
+.footer__text {
+	margin: 32px 0 76px;
+	font-size: 16px;
+	line-height: 24px;
+	color: @basic-grey;
+
+	@media (max-width: @mobile-width-only) {
+		br {
+			display: none;
+		}
+	}
+}
+
+.footer__note {
+	font-size: 21px;
+	line-height: 26px;
+	color: @basic-black;
+}
+
+.footer__copyright {
+	font-size: 16px;
+	line-height: 24px;
+	color: @basic-grey;
+	margin: 71px auto 0;
+	padding: 31px;
+	border-top: 1px solid @basic-light-grey;
+	width: calc(100% - 160px);
+}

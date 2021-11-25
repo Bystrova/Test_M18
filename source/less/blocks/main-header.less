@@ -1,0 +1,149 @@
+.main-header {
+	@media (min-width: @desktop-width) {
+		height: 100vh;
+	}
+}
+
+.main-header__section {
+
+	&:first-child {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr min-content;
+		padding: 20px 10px;
+		height: 100vh;
+
+		@media (min-width: @tablet-width) {
+			padding: 48px 10px 48px 110px;
+		}
+	}
+
+	&:last-child {
+		padding: 20px 0;
+	}
+}
+
+.main-header__box {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.main-header__title {
+	margin: 105px 20px 27px 0;
+	font-size: 34px;
+	line-height: 34px;
+	letter-spacing: -0.5px;
+	font-weight: 500;
+
+	@media (min-width: @tablet-width) {
+		margin: 205px 20px 27px 0;
+		font-size: 64px;
+		line-height: 64px;
+	}
+}
+
+.main-header__text {
+	font-size: 21px;
+	line-height: 30px;
+	letter-spacing: -0.01px;
+	margin-bottom: 44px;
+}
+
+.main-header__flex {
+	display: flex;
+	align-items: center;
+	margin-bottom: 258px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+
+	@media (min-width: @tablet-width) {
+		flex-direction: row;
+		gap: 0;
+		align-items: center;
+	}
+}
+
+.main-header__note {
+	margin-left: 31px;
+	color: @basic-grey;
+}
+
+.main-header__content-link {
+	line-height: 18px;
+	color: @basic-orange;
+	font-weight: 500;
+	margin-left: 58px;
+	text-align: left;
+	display: block;
+	position: relative;
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: "";
+		border-right: 2px solid @basic-orange;
+		border-bottom: 2px solid @basic-orange;
+		border-radius: 0 0 5px 0;
+		transform: rotate(45deg);
+	}
+
+	&::before {
+		width: 30px;
+		height: 30px;
+		top: 0;
+		left: -50px;
+	}
+
+	&::after {
+		width: 17px;
+		height: 17px;
+		top: -2px;
+		left: -43px;
+	}
+
+	&:hover::before,
+	&:hover::after {
+		transform: rotate(53deg) skew(15deg);
+		top: -3px;
+		border-radius: 0 0 5px 0;
+	}
+}
+
+.main-header__contacts {
+	color: @basic-black;
+	font-size: 21px;
+	line-height: 25px;
+	padding-top: 10px;
+	position: absolute;
+	top: 17px;
+	right: 10px;
+	z-index: 1;
+
+	@media (min-width: @tablet-width) {
+		top: 51px;
+		right: 109px;
+		font-size: 21px;
+		line-height: 25px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 26px;
+		height: 26px;
+		background: url("/img/phone-pic.svg") no-repeat;
+		top: 8px;
+		left: -35px;
+	}
+
+	&:hover {
+		color: @basic-orange;
+	}
+}
+
+.main-header__contacts-text {
+	@media (max-width: @mobile-width-only){
+		display: none;
+	}
+}
