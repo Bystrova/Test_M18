@@ -1,28 +1,31 @@
 {
-  "name": "test_m18",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build",
-    "start": "gulp"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "not dead",
-    "not ie <= 11"
-  ],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.27.7",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-less": "^5.0.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-sourcemaps": "^3.0.0",
-    "less": "^4.1.2"
-  }
+	"name": "test_m18",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "gulp build",
+		"start": "gulp",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"not dead",
+		"not ie <= 11"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.27.7",
+		"del": "^6.0.0",
+		"gh-pages": "^3.2.3",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-less": "^5.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-sourcemaps": "^3.0.0",
+		"less": "^4.1.2"
+	}
 }

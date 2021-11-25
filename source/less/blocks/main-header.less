@@ -1,6 +1,6 @@
 .main-header {
 	@media (min-width: @desktop-width) {
-		height: 100vh;
+		// height: 100vh;
 	}
 }
 
@@ -14,12 +14,16 @@
 		height: 100vh;
 
 		@media (min-width: @tablet-width) {
-			padding: 48px 10px 48px 110px;
+			padding: 48px 10px 68px 110px;
 		}
 	}
 
 	&:last-child {
 		padding: 20px 0;
+
+		@media (min-width: @tablet-width) {
+			height: 100vh;
+		}
 	}
 }
 
