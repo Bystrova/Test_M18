@@ -294,9 +294,6 @@ img {
   }
 }
 @media (min-width: 1280px) {
-  .main-header {
-    height: 100vh;
-  }
 }
 .main-header__section:first-child {
   display: grid;
@@ -308,11 +305,16 @@ img {
 }
 @media (min-width: 768px) {
   .main-header__section:first-child {
-    padding: 48px 10px 48px 110px;
+    padding: 48px 10px 68px 110px;
   }
 }
 .main-header__section:last-child {
   padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .main-header__section:last-child {
+    height: 100vh;
+  }
 }
 .main-header__box {
   display: grid;
