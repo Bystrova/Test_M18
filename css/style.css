@@ -301,11 +301,12 @@ img {
   grid-template-rows: 1fr -webkit-min-content;
   grid-template-rows: 1fr min-content;
   padding: 20px 10px;
-  height: 100vh;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .main-header__section:first-child {
     padding: 48px 10px 68px 110px;
+    height: 100vh;
   }
 }
 .main-header__section:last-child {
