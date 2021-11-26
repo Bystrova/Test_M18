@@ -301,7 +301,6 @@ img {
   grid-template-rows: 1fr -webkit-min-content;
   grid-template-rows: 1fr min-content;
   padding: 20px 10px;
-  height: 100%;
 }
 @media (min-width: 768px) {
   .main-header__section:first-child {
@@ -344,7 +343,7 @@ img {
 .main-header__flex {
   display: flex;
   align-items: center;
-  margin-bottom: 258px;
+  margin-bottom: 58px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
@@ -354,6 +353,11 @@ img {
     flex-direction: row;
     gap: 0;
     align-items: center;
+  }
+}
+@media (min-width: 1280px) {
+  .main-header__flex {
+    margin-bottom: 258px;
   }
 }
 .main-header__note {
